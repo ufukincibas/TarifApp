@@ -1,15 +1,18 @@
 import React from "react";
-import { View ,Text  } from "react-native";
+import { View, Text, TouchableOpacity, Image } from "react-native";
+import styles from "./Card.styles"; // Stil dosyanız
 
-import styles from "./Card.styles"
+const MealsCard = ({ meal, onSelect }) => {
+  return (
+    <TouchableOpacity style={styles.card} onPress={onSelect}>
+      
+      <Image source={{ uri: meal.strMealThumb }} style={styles.image} />
+      <View style={styles.bodyContainer}>
+        <Text style={styles.title}>{meal.strMeal}</Text>
+         </View>
+     
+    </TouchableOpacity>
+  );
+};
 
-function MealCard(){
-    return(
-        <View>
-            <Text>
-                Meal Card yapısı
-            </Text>
-        </View>
-    )
-}
-export default MealCard;
+export default MealsCard;

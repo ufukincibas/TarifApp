@@ -20,7 +20,7 @@ function CatogorieCard({ navigation }) {
   const renderItem = ({ item }) => (
     <TouchableOpacity
       style={styles.card}
-      onPress={() => navigation.navigate("Meals", { category: item.strCategory })}
+      onPress={() => navigation.navigate("MealsPage", { category: item.strCategory })}
     >
       <Image source={{ uri: item.strCategoryThumb }} style={styles.image} />
       <View style={styles.bodyContainer}>

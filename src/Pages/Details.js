@@ -3,11 +3,13 @@ import { View, Text } from "react-native";
 
 function Details(){
     return(
-        <View>
-            <Text>
-                Detail sayfası
-            </Text>
+        <View style={{ flex: 1 }}>
+
+      <MealCard navigation={navigation} />
+      <Button title="gotoDetails" onPress={GotoDetails} />
+
         </View>
+
     )
 }
 
