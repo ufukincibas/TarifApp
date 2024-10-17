@@ -1,14 +1,14 @@
 import React from "react";
 import { View, Text } from "react-native";
 
-function Catogories(){
+function Details(){
     return(
         <View>
             <Text>
-                Catogorie sayfası
+                Detail sayfası
             </Text>
         </View>
     )
 }
 
-export default Catogories
+export default Details;
